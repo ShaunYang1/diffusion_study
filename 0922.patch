@@ -1,0 +1,14 @@
+diff --git a/generate.sh b/generate.sh
+index 0c25b8c..f94d583 100755
+--- a/generate.sh
++++ b/generate.sh
+@@ -11,7 +11,7 @@ cmake ${builder} .. \
+     -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+     -DCMAKE_EXPORT_COMPILE_COMMANDS=1 \
+     -DCMAKE_INSTALL_PREFIX=${WORKSPACE_PATH}/install \
+-    -DBUILD_PY_FFI=ON \
+-    -DBUILD_MULTI_GPU=ON \
++    -DBUILD_PY_FFI=OFF \
++    -DBUILD_MULTI_GPU=OFF \
+     -DCMAKE_CUDA_FLAGS="-lineinfo" \
+     -DUSE_NVTX=ON
